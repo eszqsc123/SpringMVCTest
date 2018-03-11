@@ -1,3 +1,4 @@
+// 该包类似于entity包
 package org.nt.form;
 
 /**

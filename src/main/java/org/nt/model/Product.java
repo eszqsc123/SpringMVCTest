@@ -1,3 +1,4 @@
+// 该包也类似于entity包
 package org.nt.model;
 
 import java.io.Serializable;
