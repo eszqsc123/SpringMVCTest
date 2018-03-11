@@ -43,7 +43,7 @@ public class ControllerServlet extends HttpServlet {
         // 如果要填写产品表单, 则直接显示视图
         String dispatchUrl = null;
         if ("input-product".equals(action)) {
-            dispatchUrl = "/jsp/ProductForm.jsp";
+            dispatchUrl = "/WEB-INF/jsp/ProductForm.jsp";
         } else if ("save-product".equals(action)) {
             // 存储表单产品信息
             ProductForm productForm = new ProductForm();
@@ -62,7 +62,7 @@ public class ControllerServlet extends HttpServlet {
             // 将product对象放入到request对象中, 便于之后再JSP编程中使用该对象
             request.setAttribute("product", product);
             // 将完成的视图返回给客户端的用户
-            dispatchUrl = "/jsp/ProductDetail.jsp";
+            dispatchUrl = "/WEB-INF/jsp/ProductDetail.jsp";
         }
 
         // 控制器返回对应的视图给客户端的用户
